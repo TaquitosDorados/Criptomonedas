@@ -27,7 +27,7 @@ const Cryptocurrencies = ({ simplified }) => {
       {!simplified && (
         <div className="search-crypto">
           <Input
-            placeholder="Search Cryptocurrency"
+            placeholder="Buscar Criptomoneda"
             onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
           />
         </div>
@@ -49,9 +49,9 @@ const Cryptocurrencies = ({ simplified }) => {
                 extra={<img className="crypto-image" src={currency.iconUrl} />}
                 hoverable
               >
-                <p>Price: {millify(currency.price)}</p>
-                <p>Market Cap: {millify(currency.marketCap)}</p>
-                <p>Daily Change: {currency.change}%</p>
+                <p>Precio: {millify(currency.price)}</p>
+                <p>Cantidad en el Mercado: {millify(currency.marketCap)}</p>
+                <p>Cambio Diario: {currency.change}%</p>
               </Card>
             </Link>
           </Col>
